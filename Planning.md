@@ -4,7 +4,7 @@ https://trello.com/b/UZsgbgVw/someones-pc
 Public Github Link
 https://github.com/mgballou/Someones-PC
 
-[SCREENSHOP OF MVP ERD]
+[SCREENSHOT OF MVP ERD]
 <img width="1213" alt="Screen Shot 2023-03-27 at 8 56 24 PM" src="https://user-images.githubusercontent.com/125108218/228099417-4942b494-6edc-4717-ba0f-5f4fc5922bb9.png">
 
 
@@ -21,3 +21,4 @@ Documentation - Ciaran Kearney
 Frontend - Anthony Blalock  
 Backend - Matthew Ballou  
 Designer - Ciaran Kearney  
+

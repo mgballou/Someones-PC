@@ -1,0 +1,70 @@
+https://www.dafont.com/pkmn-rbygsc.font
+Red Blue Yellow etc font for pc? 
+
+[Font from Anthony for heading]
+---------------------------------------------------------
+views folder (any file)
+
+<% if (user) {%>
+INFORMATION FROM PAGE
+<% } %> 
+
+This code will hide enclosed information from people who aren't logged in.
+
+
+Use for "Someone's PC"
+
+- leaving comments
+- saving team 
+- editing your team
+
+- leave out creating team (can be a guest and create a team but need to log in to save it) 
+---------------------------------------------------------
+
+Have the user select their favourite pokemon as their Avatar 
+
+---------------------------------------------------------
+
+auto populate a pokemon's moveset + stats with a basic number of moves (if simple)
+
+https://www.dafont.com/pkmn-rbygsc.font
+Red Blue Yellow etc font for pc? 
+
+[Font from Anthony for heading]
+---------------------------------------------------------
+views folder (any file)
+
+<% if (user) {%>
+INFORMATION FROM PAGE
+<% } %> 
+
+This code will hide enclosed information from people who aren't logged in.
+
+
+Use for "Someone's PC"
+
+- leaving comments
+- saving team 
+- editing your team
+
+- leave out creating team (can be a guest and create a team but need to log in to save it) 
+---------------------------------------------------------
+
+Have the user select their favourite pokemon as their Avatar 
+
+---------------------------------------------------------
+
+Order of business. 
+
+- controllers
+
+- models
+
+- views
+Home page -picture of bill, welcome message. Nav bar offering log in only?
+
+Logged in Home page - Nav bar |user name & selected sprite|Home|New Teams|  list of teams already created, teams shown with name of team and pokemon sprites. Create new team button.  
+
+New Team page - Nav bar |user name & selected sprite|Home|New Teams| placeholder of "Team #1" depending on position (MVP just team), search function to select pokemon from API, beyond MVP - auto generate stats, items, moves etc, beyond that allow users to edit/select. 
+
+Created Team Page - Nav bar |user name & selected sprite|Home|New Teams|Show all pokemon in vertical list, sprite on the left, moveset + stats on the right. Edit + delete button. 
