@@ -25,7 +25,7 @@
                 <p><%=pokemon.abilities.current.toUpperCase()%></p>
                 <h3>Item:</h3>
                 <%if (pokemon.heldItem) {%>
-                    <p><%=pokemon.heldItem%></p>
+                    <p><%=pokemon.heldItem.toUpperCase()%></p>
                 <% } else { %>
                     <p>None</p>
                 <% } %>
@@ -53,10 +53,11 @@
                 </label>
                 <label id="">Change Held Item:
                     <select name="heldItem">
+                        <%items.forEach(i => { %>
+                            <option value="<%=i.name%>"><%=i.name.toUpperCase()%></option>
+                       <% })%>
                         <!-- will add a forEach function to list all possible held items from database -->
-                        <option value="expert-belt">Expert Belt</option>
-                        <option value="kings-rock">King's Rock</option>
-                    </select>
+                        </select>
                 </label>
                 <label>Change Ability
                     <select name="ability" id="">

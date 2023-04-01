@@ -1,5 +1,6 @@
 const Team = require('../models/Team')
 const Pokemon = require('../models/Pokemon')
+const Item = require('../models/Item')
 const axios = require('axios')
 
 let endpoint
@@ -126,10 +127,15 @@ function newPokemon(req, res) {
 }
 
 function edit(req, res) {
+    let pokemon
     Pokemon.findById({ _id: req.params.id })
-        .then(function (pokemon) {
-            // console.log(pokemon)
-            res.render('pokemon/edit', { pokemon, title: "Edit Pokemon Details" })
+        .then(function (foundPokemon) {
+            pokemon = foundPokemon
+            return Item.find({})
+        })
+        .then(function(allItems){
+            res.render('pokemon/edit', { pokemon, title: "Edit Pokemon Details", items: allItems })
+
         })
         .catch(function (err) {
             console.log(err)
