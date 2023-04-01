@@ -6,9 +6,9 @@
 <img height="150px" width="150px" class ="img-teams" src ="https://64.media.tumblr.com/641ec476865c68bb4f6f7bf6928c1d5c/tumblr_pevr8icX581vw1ceco1_1280.pnj">
 </div> -->
 
+<% teams.forEach(t=> { %>
     <div class="eachTeam">
         <div class="sprite">
-            <% teams.forEach(t=> { %>
                 <div id="sprite">
                     <div class="details">
                         <p height="30px" width="30px"><a href="/teams/<%=t._id%>">
@@ -37,8 +37,8 @@
             </form>
         </div>
 
-        <% }) %>
     </div>
+    <% }) %>
 
     <button class="createNewTeam"><a href="/teams/new">Create New Team</a></button>
 
