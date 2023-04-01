@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  /* border: solid blue 1px; */
+  border: solid blue 1px;
 }
 
 
@@ -433,6 +433,7 @@ a:link {
 
 #spriteRow {
   display: flex;
+  height: 45px;
   justify-content: center;
   background-color: white;
   margin: 0 50px;
