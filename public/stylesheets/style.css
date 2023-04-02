@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* border: solid blue 1px; */
+  border: solid blue 1px;
 }
 
 
@@ -198,7 +198,6 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100%; */
   margin: 70px 50px;
 }
 
@@ -207,7 +206,6 @@ a:link {
   justify-content: center;
   background-color: red;
   color: white;
-  /* margin: 2px 60px; */
   padding: 2px 20px;
   margin: 5px;
   border: solid black 2px;
@@ -532,6 +530,47 @@ a:link {
 
 .change {
   margin: 10px;
+}
+
+.whosthat {
+  background-image: contain;
+}
+
+.choose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(117, 195, 237);
+
+}
+
+.choose>form {
+  margin: 10px;
+}
+
+.choose-button {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  padding: 2px 20px;
+  margin: 5px 0 5px 50px;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+.favorite {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.favorite>h1 {
+  margin: 0;
+}
+
+#choose {
+  text-align: center;
 }
 
 #base-stats {
