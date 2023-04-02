@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: solid blue 1px;
+  /* border: solid blue 1px; */
 }
 
 
@@ -540,7 +540,7 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(117, 195, 237);
+  border: double black 6px;
 
 }
 
@@ -563,6 +563,7 @@ a:link {
   display: flex;
   justify-content: center;
   padding: 15px;
+  border: double black 6px;
 }
 
 .favorite>h1 {
