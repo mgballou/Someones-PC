@@ -3,15 +3,21 @@
     <div class="pokeNewImg">
         <!-- IMAGE ADD USING CSS -->
     </div>
-        <div>
+        <div class="form-container">
+            <form class="pokeRandom" action="/pokemon" method="POST">
+                <input type="text" name="name" class="invisible-input" value = "<%= Math.floor(Math.random()* 1008)%>">
+              </input>
+          </label><br>
+          <button type="submit" class="new-button">Random Pokemon</button>
+      </form>
+            
             <form class="pokeNew" action="/pokemon" method="POST">
                 <label id="text">Enter poke' Name/ Dex Number:
                     <div id="dexInput"><input type="text" name="name" id="textInput" required
                             pattern="(\D+|[1-9]|[1-9][0-9]|[1-9][0-9][0-9]|100[0-8])"></input></div>
                 </label>
 
-                <button class="new-button" type="submit">Next</button>
-
+                <button class="new-button" id="next-poke-new" type="submit">Next</button>
             </form>
         </div>
 

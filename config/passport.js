@@ -14,7 +14,7 @@ passport.use(new GoogleStrategy(
 
         try {
             let user = await User.findOne({googleId: profile.id})
-            // if it finds the user, user will be truthy, otherwise it will be undefined 
+           
             if (user) {
                 return cb(null, user)
             } else {

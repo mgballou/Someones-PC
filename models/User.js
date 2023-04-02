@@ -2,15 +2,13 @@ const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
     name: String,
-    googleId: {type: String,
-    require: true},
+    googleId: {
+        type: String,
+        require: true
+    },
     email: String,
     avatar: String,
-    favorite: {
-        name: String,
-        types: {},
-        sprite: String,
-    }
+    favorite: {type: Object}
 }, {
     timestamps: true
 

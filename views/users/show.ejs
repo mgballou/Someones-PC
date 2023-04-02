@@ -6,16 +6,16 @@
         <button type="submit" class="new-button">Next</button>
     </form>
     
-        <% if (user.favorite.sprite) {%>
+        <% if (user.favorite) {%>
             <img src="<%=user.favorite.sprite%>">           
             <% } else {%>                 
-                <img src="https://i.imgur.com/HddtBOT.png" alt="who">
+                <img id="whosthat" src="https://i.imgur.com/HddtBOT.png" alt="who">
                 <%} %> 
 
                 
 
         <h1>
-            <%=user.name%>'s Favourite Pokemon
+            <%=user.name%>'s Favorite Pokemon
         </h1>
 
         <%- include("../partials/footer")%>

@@ -32,7 +32,7 @@ function create(req, res) {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${endpoint}`)
         .then(function (response) {
             foundPokemon = {
-                name: response.data.name,
+                name: response.data.name.toUpperCase(),
                 dexNumber: response.data.id,
                 user: req.user._id,
                 sprite: response.data.sprites.front_default,
