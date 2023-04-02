@@ -53,20 +53,34 @@ a:link {
   border: double black 6px;
   background-color: white;
   box-shadow: 3px 3px 5px;
+  overflow: scroll;
 }
 
 .daycare {
   display: flex;
-  justify-content: center;
+  justify-content: centergit;
   flex-flow: row wrap;
   min-height: 290px;
   min-width: 490px;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLmA4OhHKNT0y0mAmTYgNWp1OVI_m6__uFA&usqp=CAU);
   background-size: 493px 300px;
+  
 }
 
 .daycareSprite {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.daycareSprite>p {
+  padding: 0 0 0 45px;
+  margin: 0 0 3px 0;
+}
+
+.daycare-sprite {
+  padding: 0 0 0 23px;
 }
 
 
@@ -229,6 +243,8 @@ a:link {
   padding: 30px;
   border: black 6px;
   background-color: white;
+  background-size: contain;
+
   
 }
 
@@ -412,6 +428,142 @@ a:link {
 .createNewTeam>a {
   color: black;
 }
+
+.poke-edit-form {
+  display: flex;
+  flex-direction: column;
+}
+.poke-stuff {
+  display: flex;
+  flex-direction: column;
+}
+
+.type, .ability, .item {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-name {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+.edit-name>p {
+  margin: 0;
+  padding: 10px;
+}
+
+.edit-top {
+  display: flex;
+  justify-content: center;
+  border-top: single black 2px;
+  border-bottom: double black 6px;
+}
+
+.trio {
+  display: grid;
+  grid-template-columns: [first] 80% [end];
+  grid-template-rows: auto;
+  margin: 0 0 0 20px;
+  border-left: solid black 2px;
+  width: 320px;
+}
+
+.type>h3, .ability>h3, .item>h3 {
+  margin: 0 20px 0 0;
+  padding: 5px;
+
+}
+
+.type>p, .ability>p, .item>p {
+  margin: auto;
+  
+}
+
+.type, .ability, .item {
+  justify-content: flex-start;
+}
+
+.edit-bottom {
+  padding: 10px;
+}
+
+.edit-bottom>h3 {
+  justify-content: center;
+}
+
+.stat {
+  display: flex;
+  border: solid black 2px;
+  border-style: 1px 0 0 1px inset black;
+
+}
+
+.base-stat {
+  border: solid black 2px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px;
+}
+
+.all-stats {
+  box-shadow: 2px 2px 4px;
+}
+
+.editName {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-content: space-between;
+}
+
+.change {
+  margin: 10px;
+}
+
+#base-stats {
+text-align: center;
+border: single black 6px;
+padding: 5px;
+margin: 0;
+}
+
+#hp {
+  margin: 0 0 0 45px;
+  padding: 20px 0 0 0;
+}
+
+#atk {
+  margin: 0 0 0 38px;
+  padding: 20px 0 0 0;
+}
+
+#def {
+  margin: 0 0 0 38.5px;
+  padding: 20px 0 0 0;
+}
+
+#spatk {
+  margin: 0 0 0 20px;
+  padding: 20px 0 0 0;
+}
+
+#spdef {
+  margin: 0 0 0 19.5px;
+  padding: 20px 0 0 0;
+}
+
+#speed {
+  margin: 0 0 0 19.5px;
+  padding: 20px 0 0 0;
+}
+
+#one, #two, #three, #four, #five, #six {
+  padding: 20px 0 0 0;
+  margin-left: 10px;
+} 
 
 #deleteTeam {
   display: flex;

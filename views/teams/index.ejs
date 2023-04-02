@@ -8,7 +8,12 @@
 
 <% teams.forEach(t=> { %>
     <div class="eachTeam">
+<<<<<<< HEAD
         <div class="sprite">
+=======
+        <% teams.forEach(t=> { %>
+            <div class="sprite">
+>>>>>>> working-branch
                 <div id="sprite">
                     <div class="details">
                         <p height="30px" width="30px"><a href="/teams/<%=t._id%>">
@@ -28,7 +33,6 @@
                         <% }) %>
                 </div>
 
-                <!-- <button><a href="/teams/<%=t._id%>">Team Details</a></button> -->
         </div>
 
         <div id="deleteTeam">

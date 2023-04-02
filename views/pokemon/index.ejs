@@ -4,7 +4,7 @@
         <fieldset class="daycare">
             <% pokemon.forEach(p=> { %>
                 <div class="daycareSprite">
-                    <a href="/pokemon/<%=p._id%>"><img class="" src="<%= p.sprite %>"></a>
+                    <a href="/pokemon/<%=p._id%>"><img class="daycare-sprite" src="<%= p.sprite %>"></a>
                     <p>
                         <%if (p.nickname !=='' ){ %>
                             "<%=p.nickname%>"
